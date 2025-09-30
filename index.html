@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Pure Kickz Ordering</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Pure Kickz Ordering Form</h1>
+
+    <div id="div1">
+        <h2>Customer Info</h2>
+        <input type="text" id="name" placeholder="Enter your name"><br><br>
+        <input type="text" id="address" placeholder="Enter your address"><br><br>
+        <input type="text" id="contact" placeholder="Enter your contact number"><br><br>
+    </div>
+
+    <div id="div2">
+        <h2>Select Your Shoes</h2>
+        <select id="shoe1">
+            <option value="OG Sambas - 2,500 Pesos">OG Sambas – ₱2,500</option>
+            <option value="Jordan 1 Travis Scott - 7,500 Pesos">Jordan 1 Travis Scott – ₱7,500</option>
+            <option value="New Balance 9060 - 2,000 Pesos">New Balance 9060 – ₱2,000</option>
+            <option value="On Cloud Black/Ivory - 5,000 Pesos">On Cloud Black/Ivory – ₱5,000</option>
+            <option value="Lightning McQueen Crocs - 1,500 Pesos">Lightning McQueen Crocs – ₱1,500</option>
+        </select><br><br>
+        <input type="button" py-click="generate_order" value="Submit Order">
+    </div>
+
+     <div id="div3">
+        <h2>Order Summary</h2>
+    </div>
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="output"></div>
+
+<py-script src="main.py"></py-script>
+
+</body>
+</html>
